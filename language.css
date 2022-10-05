@@ -1,0 +1,67 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Baskervville&display=swap');*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: vh;
+    width: 105%;
+    
+}
+html{
+    background-color: black;
+    /*font-family: 'Baskervville', serif;*/
+    font-family: 'Lato', sans-serif;
+    
+}
+#Language .Language{
+    margin-top: 28px;
+    height: 98vh;
+}
+#Language h1{
+    text-transform: uppercase;
+    color: #FFCACA;
+    font-weight: 500;
+    text-decoration: underline;
+    letter-spacing: ;
+}
+#Language .Language-item h2{
+    color: #FFCACA;
+    text-transform: ;
+    font-size: 1.4rem;
+    letter-spacing: .1rem;
+}
+#Language .Language-items{
+    display: flex;
+    flex-direction: column;
+    flex-basis: ;
+    margin: px;
+    width: 60%;
+    margin-left: 10px;
+}
+#Language .Language-item{
+    padding: 20px;
+    align-items: center;
+    display: flex;
+    padding: 30px;
+    margin: 20px;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0 white;
+    transition: .3s ease box-shadow;
+}
+#Language .Language-item:hover{
+    box-shadow: 0px 0px 5px 0 #815757;
+}

@@ -1,0 +1,91 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Baskervville&display=swap');*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+html{
+    background-color: black;
+    /*font-family: 'Baskervville', serif;*/
+    font-family: 'Lato', sans-serif;
+}
+/* Contact Section */
+#contacts {
+    background-color: ;
+}
+#contacts .section-title {
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+#contacts .contact{
+    min-height: vh;
+}
+#contacts .container{
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+#contacts .section-title{
+    font-size: 1.6rem;
+    letter-spacing: .1rem;
+    color: #FFCACA;
+    text-decoration: underline;
+    margin-top: 36px;
+    font-weight: 500;
+}
+#contacts .section-title span{
+    color: ;
+}
+#contacts .contact-items{
+    width: 400px;
+    margin-bottom: 10px;
+}
+#contacts .contact-item{
+    padding: 0px;
+    align-items: center;
+    display: flex;
+    padding: 30px;
+    margin:  40px 70px;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0 white;
+    transition: .3s ease box-shadow;
+    border-radius: ;
+    margin-top: 10px;
+}
+#contacts .contact-item:hover{
+    box-shadow: 0px 0px 5px 0 #815757;
+}
+#contacts .icon img{
+    width: px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    border-radius: 10%;
+}
+#contacts .contact-info h1{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top:px;
+    letter-spacing: .1rem;
+    color: #ca8888;
+}
+#contacts .contact-info h2{
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 2rem;
+    color: #FFCACA;
+}
+/* End Contact Section */

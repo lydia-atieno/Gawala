@@ -1,0 +1,203 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Baskervville&display=swap');*/
+/*@import url('https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap');*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+}
+html{
+    /*background-color: #AA405B;*/
+    background-image: url(file:///C:/Users/user/Desktop/Gawala/img/4.jpg);
+    background-size: cover;
+    background-position: center, center;
+    background-color: black;
+    opacity: ;
+    /*font-family: 'Baskervville', serif;*/
+    /*font-family: 'Shippori Antique B1', sans-serif;*/
+    font-family: 'Lato', sans-serif;
+
+}
+
+/*Header section*/
+#header{
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;/*moves items to the center*/
+    height: auto;
+}
+#header .header{
+    height: 10vh;
+   /*background-color: #fd8079;*/
+   background-color: transparent;
+   opacity: .8;
+}
+#header .brand{
+    color: #FFCACA;
+    margin-left: 55px;
+    font-weight: 500;
+    letter-spacing: .1rem;
+    font-size: 1.2rem;
+}
+#header .nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    max-width: 1300px;
+    padding: 0 20px;
+}
+#header .nav-list ul{
+    display: flex;
+    position: absolute;/*very important*/
+    background-color: black;
+    top: 0;
+    left: 100%;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1;
+    overflow-x: hidden;
+    transition: .7s ease left;
+    
+}
+#header .nav-list ul.active{
+    left: 0;
+}
+#header .nav-list ul a{
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: .1rem;
+    color: bisque;
+    padding: 12px;
+    display: block;
+    
+}
+#header .nav-list ul a:hover{
+    color: #D46059;
+}
+
+
+#header .hamburger{
+    height: 60px;
+    width: 60px;
+    background-color: ;
+    position: relative;
+    display: inline-block;
+   /* border: 3px solid white;*/
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    cursor: pointer;
+    transform: scale(.8);
+    margin: 20px;
+}
+#header .hamburger .bar{
+    height: 5px;
+    width: 48px;
+    border-radius: 20px;
+    position: absolute;
+    background-color: white;
+    z-index: -1;
+    transition: all .5s ease-in-out; /*For smooth transformation of the bars*/
+    margin-bottom: px;
+}
+#header .hamburger .bar::before,
+#header .hamburger .bar::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 20px;
+    left: 0;
+    background-color: white;
+    transition: all .5s ease-in-out; /*For smooth transformation of the bars*/
+    margin-top: px;
+
+}
+#header .hamburger .bar::after{
+    transform: translateY(-16px);
+   
+}
+#header .hamburger .bar::before{
+    transform: translateY(16px);
+    margin-top: px;
+}
+#header .hamburger.active .bar{
+    transform: translateX(-50px);
+    background: transparent;
+}
+#header .hamburger.active .bar::before{
+    transform: rotate(45deg) translate(35px,-35px);
+}
+#header .hamburger.active .bar::after{
+    transform: rotate(-45deg) translate(35px,35px);
+}
+
+#header .nav-list ul li button{
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 500;
+    background-color: black;
+    letter-spacing: .2rem;
+}
+#header .nav-list ul li button:hover{
+    color: #d68484;
+}
+
+
+
+
+/*End header section*/
+
+#title h1{
+    color: #fccccc;
+    font-weight: 500;
+    font-size: 1.8rem;
+    letter-spacing: rem;
+}
+
+#title h2 span{
+    color: white;
+    font-weight: 500;
+    max-width: px;
+    font-size: 0.8rem;
+}
+#title span{
+    position: relative;
+    display: inline-block;
+    font-size: 0.8rem;
+    color: ;
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--i))
+
+    
+
+}
+
+@keyframes flip{
+    0%,80%{
+        transform: rotateY(360deg);
+    }
+}
