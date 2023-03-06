@@ -202,3 +202,38 @@ html{
         transform: rotateY(360deg);
     }
 }
+
+
+/*Media Query For Desktop*/
+@media only screen and (min-width:1200px) {
+    html{
+        background-image: url(file:///C:/Users/user/Desktop/Gawala/img/4.jpg);
+        background-size: cover;
+  
+    }
+    #header .hamburger{
+        display: none;
+    }
+    #header .nav-list ul{
+        position: initial;
+        display: block;
+        height: auto;
+        width: fit-content;
+        background-color: transparent;
+    }
+    #header .nav-list ul a::after{
+        display: none;
+    }
+    #header .nav-list ul li{
+        display: inline-block;
+
+    }
+    #header .nav-list ul li button{
+        background-color: transparent;
+        font-size: 1rem;
+    }
+    #header .nav-list ul li button:hover{
+        color: black;
+    }
+    
+}
